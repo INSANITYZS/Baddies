@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
+  color: #e0e0e0;
+  text-align: center;
+  overflow: hidden;
+}
+
+canvas#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-title {
+  font-size: 3em;
+  margin-bottom: 1rem;
+  color: #cccccc;
+  text-shadow: 0 0 25px #444, 0 0 50px #666;
+}
+
+.sub-title {
+  font-size: 2em;
+  margin-bottom: 1rem;
+  color: #cccccc;
+  text-shadow: 0 0 25px #444, 0 0 50px #666;
+  font-weight: 800;
+}
+
+.discord-btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 15px 30px;
+  background: transparent;
+  border: 2px solid #999;
+  border-radius: 30px;
+  color: #ccc;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 0 12px #666;
+  transition: 0.3s;
+}
+
+.discord-btn:hover {
+  background: #999;
+  color: #0d0d0d;
+  box-shadow: 0 0 40px #bbb, 0 0 70px #aaa;
+}
+
+.buttons {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.site-button {
+  padding: 15px;
+  border: 2px solid #888;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #ddd;
+  background: transparent;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 0 0 10px #555;
+  transition: 0.3s;
+  box-shadow: 0 0 12px #222;
+}
+
+.site-button:hover {
+  background: #aaa;
+  color: #0d0d0d;
+  box-shadow: 0 0 40px #999, 0 0 60px #888;
+}
+
+.button-info {
+  margin-top: 8px;
+  font-size: 1em;
+  color: #ccc;
+  text-shadow: 0 0 6px #777;
+}
+
+.icon {
+  width: 22px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.discord-container {
+  margin-top: 25px;
+}
+
+.discord-join-btn {
+  padding: 15px 25px;
+  border: 2px solid #999;
+  border-radius: 30px;
+  color: #ccc;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+  background: transparent;
+  text-shadow: 0 0 12px #666;
+  transition: 0.3s;
+}
+
+.discord-join-btn:hover {
+  background: #999;
+  color: #0d0d0d;
+  box-shadow: 0 0 40px #bbb, 0 0 70px #aaa;
+}
