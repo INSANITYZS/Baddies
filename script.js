@@ -1,8 +1,7 @@
+
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 let particlesArray = [];
-let flickerTimer = 0;
-
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
@@ -47,28 +46,14 @@ function init() {
     const y = Math.random() * canvas.height;
     const dx = (Math.random() - 0.5) * 2;
     const dy = (Math.random() - 0.5) * 2;
-    const color = `rgba(0, 0, 0, 0.8)`; // fully black particles
+    const color = 'rgba(0, 0, 0, 0.8)';
     particlesArray.push(new Particle(x, y, dx, dy, size, color));
   }
 }
-
-function lightningFlash() {
-  const now = Date.now();
-  if (now - flickerTimer > 4000 + Math.random() * 3000) {
-    canvas.style.filter = 'brightness(2.5)';
-    setTimeout(() => {
-      canvas.style.filter = 'brightness(1)';
-    }, 100 + Math.random() * 200);
-    flickerTimer = now;
-  }
-}
-
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   particlesArray.forEach(p => p.update());
-  lightningFlash();
   requestAnimationFrame(animate);
 }
-
 init();
 animate();
