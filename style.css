@@ -1,7 +1,8 @@
+
+
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -11,14 +12,38 @@ body {
   text-align: center;
   overflow: hidden;
 }
-
 canvas#particles {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
 }
-
+.navbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.navbar-logo {
+  width: 32px;
+  margin-right: 10px;
+}
+.navbar-text {
+  font-weight: 600;
+  font-size: 1em;
+  color: #ccc;
+}
+.owner-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+.owner-icon img {
+  width: 42px;
+}
 .container {
   width: 100%;
   max-width: 500px;
@@ -31,43 +56,19 @@ canvas#particles {
   align-items: center;
   overflow: hidden;
 }
-
 .main-title {
   font-size: 3em;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #cccccc;
   text-shadow: 0 0 25px #444, 0 0 50px #666;
 }
-
 .sub-title {
-  font-size: 2em;
-  margin-bottom: 1rem;
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
   color: #cccccc;
   text-shadow: 0 0 25px #444, 0 0 50px #666;
-  font-weight: 800;
+  font-weight: 600;
 }
-
-.discord-btn {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  padding: 15px 30px;
-  background: transparent;
-  border: 2px solid #999;
-  border-radius: 30px;
-  color: #ccc;
-  font-size: 1.3em;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0 0 12px #666;
-  transition: 0.3s;
-}
-
-.discord-btn:hover {
-  background: #999;
-  color: #0d0d0d;
-  box-shadow: 0 0 40px #bbb, 0 0 70px #aaa;
-}
-
 .buttons {
   width: 100%;
   max-width: 700px;
@@ -75,7 +76,6 @@ canvas#particles {
   flex-direction: column;
   gap: 15px;
 }
-
 .site-button {
   padding: 15px;
   border: 2px solid #888;
@@ -88,31 +88,28 @@ canvas#particles {
   text-shadow: 0 0 10px #555;
   transition: 0.3s;
   box-shadow: 0 0 12px #222;
+  width: 100%;
+  display: block;
 }
-
 .site-button:hover {
   background: #aaa;
   color: #0d0d0d;
   box-shadow: 0 0 40px #999, 0 0 60px #888;
 }
-
 .button-info {
   margin-top: 8px;
   font-size: 1em;
   color: #ccc;
   text-shadow: 0 0 6px #777;
 }
-
 .icon {
   width: 22px;
   vertical-align: middle;
   margin-right: 8px;
 }
-
 .discord-container {
   margin-top: 25px;
 }
-
 .discord-join-btn {
   padding: 15px 25px;
   border: 2px solid #999;
@@ -125,7 +122,6 @@ canvas#particles {
   text-shadow: 0 0 12px #666;
   transition: 0.3s;
 }
-
 .discord-join-btn:hover {
   background: #999;
   color: #0d0d0d;
